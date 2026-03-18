@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+  }
+}
+
+.prose {
+  @apply text-zinc-600 dark:text-zinc-400 leading-relaxed;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose strong {
+  @apply text-zinc-900 dark:text-zinc-100 font-bold;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-bold text-zinc-900 dark:text-zinc-100 mb-2 mt-4;
+}
+
+.prose code {
+  @apply bg-zinc-100 dark:bg-zinc-800 text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-zinc-100 dark:bg-zinc-800 rounded-lg p-4 mb-4 overflow-x-auto;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-zinc-800 dark:text-zinc-200;
+}
+
+.prose a {
+  @apply text-emerald-600 dark:text-emerald-400 underline underline-offset-2 hover:text-emerald-500 transition-colors;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-emerald-500 pl-4 italic text-zinc-500 dark:text-zinc-400 mb-4;
+}
+
+/* Chatbot prose override — always dark */
+.prose-chat {
+  @apply text-zinc-100 leading-relaxed;
+}
+.prose-chat p {
+  @apply mb-2 text-zinc-100;
+}
+.prose-chat p:last-child {
+  @apply mb-0;
+}
+.prose-chat strong {
+  @apply text-white font-bold;
+}
+.prose-chat ul {
+  @apply list-disc list-inside mb-2;
+}
+.prose-chat ol {
+  @apply list-decimal list-inside mb-2;
+}
+.prose-chat li {
+  @apply mb-0.5 text-zinc-100;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3,
+.prose-chat h4 {
+  @apply font-bold text-white mb-1 mt-2;
+}
+.prose-chat code {
+  @apply bg-zinc-800 text-emerald-400 px-1 py-0.5 rounded text-xs font-mono;
+}
+.prose-chat a {
+  @apply text-emerald-400 underline underline-offset-2 hover:text-emerald-300;
+}
