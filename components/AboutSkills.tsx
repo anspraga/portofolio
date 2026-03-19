@@ -13,7 +13,7 @@ export default function AboutSkills() {
   const skillsList = dynamicSkills.map(s => ({
     ...s,
     icon: getIconComponent(s.icon_name)
-  })); // Gunakan dynamic skills jika ada
+  }));
 
   const leftSkills = skillsList.slice(0, Math.ceil(skillsList.length / 2));
   const rightSkills = skillsList.slice(Math.ceil(skillsList.length / 2));
