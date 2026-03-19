@@ -20,11 +20,11 @@ const siteUrl = `https://${rawSiteUrl.replace(/^https?:\/\//, '')}`;
 export const metadata: Metadata = {
   title: 'Annas Anuraga | Web Dev & IT Business Analyst',
   description:
-    'Portofolio personal Mahasiswa Teknik Informatika UNPAM semester 4, spesialisasi Web Development dan AI.',
+    'Portofolio Annas Anuraga',
   openGraph: {
     title: 'Annas Anuraga | Web Dev & IT Business Analyst',
     description:
-      'Portofolio personal Mahasiswa Teknik Informatika UNPAM semester 4, spesialisasi Web Development dan AI.',
+      'Portofolio Annas Anuraga',
     url: siteUrl,
     type: 'website',
   },

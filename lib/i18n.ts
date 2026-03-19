@@ -23,10 +23,10 @@ export const translations = {
     // AIGreeting
     aiGreeting: {
       detecting: 'Mendeteksi status aktivitas...',
-      morning: () => `Selamat pagi! Ali lagi mulai hari dengan semangat nih. Asisten AI-nya siap bantu lu. Ada ide proyek?`,
-      afternoon: () => `Selamat siang! Lagi istirahat atau masih sibuk? Ali juga lagi santai bentar. Mau ngobrolin soal Web Dev atau AI?`,
-      evening: () => `Selamat sore! Waktu yang pas buat diskusi santai. Ali lagi ngulik tech stack baru nih. Ada yang mau dibahas?`,
-      lateNight: () => `Selamat Malam. Masii melek nih? Ali udah istirahat, tapi asisten AI-nya tetep stand-by 24 jam buat lu. Mau konsultasi soal project?`,
+      morning: () => `Selamat pagi! Annas lagi mulai hari dengan semangat nih. Asisten AI-nya siap bantu lu. Ada ide proyek?`,
+      afternoon: () => `Selamat siang! Lagi istirahat atau masih sibuk? Annas juga lagi santai bentar. Mau ngobrolin soal Web Dev atau AI?`,
+      evening: () => `Selamat sore! Waktu yang pas buat diskusi santai. Annas lagi ngulik tech stack baru nih. Ada yang mau dibahas?`,
+      lateNight: () => `Selamat Malam. Masii melek nih? Annas udah istirahat, tapi asisten AI-nya tetep stand-by 24 jam buat lu. Mau konsultasi soal project?`,
     },
     // About
     about: {
@@ -107,7 +107,7 @@ export const translations = {
     // Chatbot
     chatbot: {
       generalGreeting: 'Halo! Saya G-Assistant. Ada yang bisa saya bantu hari ini?',
-      projectGreeting: 'Wah, mantap! Ada ide proyek apa nih yang mau dieksekusi? Ceritain aja garis besarnya, nanti gua bantu pilih tech stack yang pas (misalnya pakai Next.js atau React) biar Gozali bisa langsung garap!',
+      projectGreeting: 'Wah, mantap! Ada ide proyek apa nih yang mau dieksekusi? Ceritain aja garis besarnya, nanti gua bantu pilih tech stack yang pas (misalnya pakai Next.js atau React) biar Annas bisa langsung garap!',
       placeholder: 'Ketik pesan...',
       error: 'Maaf, terjadi kesalahan saat menghubungi asisten AI.',
       online: 'Online',
@@ -144,10 +144,10 @@ export const translations = {
     // AIGreeting
     aiGreeting: {
       detecting: 'Detecting activity status...',
-      morning: () => `Good morning! Gozali's starting the day full of energy. The AI assistant is ready to help — got a project idea?`,
-      afternoon: () => `Good afternoon! Taking a break or still busy? Gozali's chilling for a bit. Want to talk about Web Dev or AI?`,
-      evening: () => `Good evening! Perfect time for a chill chat. Gozali's exploring a new tech stack. Anything you want to discuss?`,
-      lateNight: () => `Still up? Gozali's resting, but the AI assistant is on standby 24/7 for you. Want to brainstorm a project idea?`,
+      morning: () => `Good morning! Annas's starting the day full of energy. The AI assistant is ready to help — got a project idea?`,
+      afternoon: () => `Good afternoon! Taking a break or still busy? Annas's chilling for a bit. Want to talk about Web Dev or AI?`,
+      evening: () => `Good evening! Perfect time for a chill chat. Annas's exploring a new tech stack. Anything you want to discuss?`,
+      lateNight: () => `Still up? Annas's resting, but the AI assistant is on standby 24/7 for you. Want to brainstorm a project idea?`,
     },
     // About
     about: {
@@ -228,7 +228,7 @@ export const translations = {
     // Chatbot
     chatbot: {
       generalGreeting: "Hello! I'm G-Assistant. How can I help you today?",
-      projectGreeting: "Great! What project idea do you want to execute? Tell me the overview and I'll help you pick the right tech stack (like Next.js or React) so Gozali can get started!",
+      projectGreeting: "Great! What project idea do you want to execute? Tell me the overview and I'll help you pick the right tech stack (like Next.js or React) so Annas can get started!",
       placeholder: 'Type a message...',
       error: 'Sorry, an error occurred while contacting the AI assistant.',
       online: 'Online',

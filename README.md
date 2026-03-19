@@ -2,7 +2,7 @@
 
 Halo! Ini adalah bagian frontend dari portofolio pribadi saya. Dibangun dengan fokus pada kecepatan, desain minimalis, dan integrasi kecerdasan buatan.
 
-**🌐 Lihat Live Website:** [portofolio-gozali.vercel.app](https://portofolio-gozali.vercel.app/)
+**🌐 Lihat Live Website:** [portofolio-gozali.vercel.app](https://portofolio-tau-nine-89.vercel.app/)
 
 ---
 
