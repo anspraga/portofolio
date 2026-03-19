@@ -1,6 +1,6 @@
 'use client';
 
-// 📁 FILE INI DI: app/admin/page.tsx
+// FILE INI DI: app/admin/page.tsx
 
 import { useState } from 'react';
 // FIX: hapus useRouter — tidak dipakai lagi setelah ganti ke window.location.href
