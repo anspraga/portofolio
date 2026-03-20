@@ -66,13 +66,13 @@ export default function AboutSkills() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl overflow-hidden border border-zinc-800"
+            className="relative rounded-3xl overflow-hidden border border-zinc-800 max-h-[500px] lg:max-h-[600px] aspect-[4/5] lg:aspect-[3/4]"
           >
             <Image
               src={profile?.about_image || "/images/annas.JPG"}
               alt={`${profile?.full_name || 'Annas Anuraga'} — ${profile ? profile.title[lang] : 'Web Developer & IT Business Analyst'}`}
-              width={600}
-              height={800}
+              fill
+              className="object-cover object-top"
               unoptimized
             />
           </motion.div>

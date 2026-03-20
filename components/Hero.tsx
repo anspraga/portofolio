@@ -13,13 +13,6 @@ import { usePortfolio } from '@/components/PortfolioProvider';
 export default function Hero() {
   const { t, lang } = useLanguage();
   const { data: { profile } } = usePortfolio();
-  const [showCVModal, setShowCVModal] = useState(false);
-
-  const handleCVClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowCVModal(true);
-    setTimeout(() => setShowCVModal(false), 4000);
-  };
 
   return (
     <section
@@ -83,51 +76,17 @@ export default function Hero() {
               {t.hero.viewProjects}
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <button
-              onClick={handleCVClick}
-              className="px-8 py-4 rounded-full border border-zinc-700 text-zinc-400 font-bold flex items-center gap-2 hover:bg-zinc-800 hover:text-zinc-100 transition-all"
+            <a
+              href="/resume.pdf"
+              download
+              className="px-8 py-4 rounded-full border border-zinc-700 text-zinc-400 font-bold flex items-center gap-2 hover:bg-zinc-800 hover:text-zinc-100 transition-all cursor-pointer"
             >
               {t.hero.downloadCV}
               <Download size={18} />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>
-
-      <AnimatePresence>
-        {showCVModal && (
-          <div className="fixed inset-0 z-[999] flex items-center justify-center p-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowCVModal(false)}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            />
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="relative z-10 w-full max-w-sm bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl text-center"
-            >
-              <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-5">
-                <span className="text-3xl">🛠️</span>
-              </div>
-              <h3 className="text-lg font-bold text-zinc-100 mb-2">{t.hero.cvModalTitle}</h3>
-              <p className="text-sm text-zinc-400 leading-relaxed mb-6">
-                {t.hero.cvModalDesc}
-              </p>
-              <button
-                onClick={() => setShowCVModal(false)}
-                className="w-full py-3 rounded-xl bg-emerald-500 text-white text-sm font-bold hover:bg-emerald-600 transition-colors"
-              >
-                {t.hero.cvModalBtn}
-              </button>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }
